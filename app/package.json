@@ -12,6 +12,7 @@
     "log4js": "6.4.0",
     "markdown-it-github-alert": "^1.0.6",
     "mermaid": "^11.14.0",
+    "msgpack-lite": "^0.1.26",
     "socket.io": "2.4.0",
     "tslib": "1.9.3"
   }
