@@ -10,6 +10,7 @@
   "dependencies": {
     "@chemzqm/neovim": "^5.7.9",
     "log4js": "6.4.0",
+    "markdown-it-github-alert": "^1.0.6",
     "mermaid": "^11.14.0",
     "socket.io": "2.4.0",
     "tslib": "1.9.3"

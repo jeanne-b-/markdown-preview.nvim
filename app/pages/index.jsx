@@ -5,6 +5,7 @@ import MarkdownIt from 'markdown-it'
 import hljs from 'highlight.js'
 import emoji from 'markdown-it-emoji'
 import taskLists from 'markdown-it-task-lists'
+import { alertPlugin } from 'markdown-it-github-alert'
 import footnote from 'markdown-it-footnote'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItToc from 'markdown-it-toc-done-right'
@@ -152,7 +153,7 @@ export default class PreviewPage extends React.Component {
   }
 
   onConnect() {
-    console.log('connect success')
+    console.log('connect succes')
   }
 
   onDisconnect() {
@@ -213,6 +214,7 @@ export default class PreviewPage extends React.Component {
         })
         .use(emoji)
         .use(taskLists)
+        .use(alertPlugin)
         .use(markdownDeflist)
         .use(footnote)
         .use(image)
@@ -335,6 +337,7 @@ export default class PreviewPage extends React.Component {
           <link rel="stylesheet" href="/_static/page.css" />
           <link rel="stylesheet" href="/_static/markdown.css" />
           <link rel="stylesheet" href="/_static/highlight.css" />
+          <link rel="stylesheet" href="/_static/admonition.css" />
           <link rel="stylesheet" href="/_static/katex@0.15.3.css" />
           <link rel="stylesheet" href="/_static/sequence-diagram-min.css" />
           <script type="text/javascript" src="/_static/underscore-min.js"></script>
